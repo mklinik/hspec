@@ -28,3 +28,7 @@ spec = do
     context "with --out" $ do
       it "sets optionsOutputFile" $ do
         optionsOutputFile <$> parseOptions ["--out", "foo"] `shouldBe` Right (Just "foo")
+
+    context "with --depth" $ do
+      it "sets depth parameter for SmallCheck" $ do
+        optionsDepth <$> parseOptions ["--depth", "23"] `shouldBe` Right (Just 23)

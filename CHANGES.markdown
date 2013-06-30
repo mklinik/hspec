@@ -1,3 +1,6 @@
+## Changes in 1.7.0
+ - Add `--depth` for use with `hspec-smallcheck`
+
 ## Changes in 1.6.1
  - Allow to specify the output file with `--out`
 
